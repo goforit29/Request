@@ -30,7 +30,7 @@ public class PolicyHandler{
             RequestAgg request = requestOptional.get();
             request.setStatus(payCanceled.getStatus());
             requestAggRepository.save(request);
-            //LJK
+            //LJK why!!!
              //System.out.println("##### listener CancelPol : " + payCanceled.toJson());
         }
     }
