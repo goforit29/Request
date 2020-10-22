@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: RequestContext
+  name: request
   labels:
-    app: RequestContext
+    app: request
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: RequestContext
+      app: request
   template:
     metadata:
       labels:
-        app: RequestContext
+        app: request
     spec:
       containers:
-        - name: RequestContext
-          image: username/RequestContext:latest
+        - name: request
+          image: username/request:latest
           ports:
             - containerPort: 8080
           readinessProbe:
