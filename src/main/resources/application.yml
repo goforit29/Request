@@ -81,11 +81,3 @@ api:
   url:
     payment: http://payment:8080
 
-feign:
-  hystrix:
-    enabled: true
-
-hystrix:
-  command:
-    default:
-      execution.isolation.thread.timeoutInMilliseconds: 610
